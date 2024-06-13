@@ -8,7 +8,7 @@
       label="Amount of Voxels"
       :value="module.amountOfVoxels"
     ></BaseInput>
-    <BaseButton 
+    <BaseButton />
   </div>
 </template>
 

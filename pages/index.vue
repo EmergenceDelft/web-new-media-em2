@@ -1,11 +1,11 @@
 <template>
   <div class="index">
     <div class="main-area">
-      <div class="inner-main-area">
+      <div class="inner-main-area" id="module-canvas">
         <Module
           v-for="mod in modules"
           :key="mod.id"
-          :stats="mod"
+          :module="mod"
           :active="activeModules.includes(mod)"
           @toggle-module-active="toggleModuleActive"
         />
@@ -60,6 +60,7 @@ onMounted(async () => {
 .inner-main-area {
   width: 100%;
   height: 100%;
+  position: relative;
 }
 .main-area {
   display: flex;
